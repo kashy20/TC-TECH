@@ -4,50 +4,172 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - TC TECH VPN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #005baa;
+      --primary-light: #e3f2fd;
+      --accent: #00c6ae;
+      --text: #222e3a;
+      --bg: #f4f7fa;
+      --card-bg: #fff;
+      --border: #e1e8f0;
+      --radius: 14px;
+      --shadow: 0 2px 18px 0 rgba(0, 91, 170, 0.10);
+    }
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       margin: 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 0;
     }
     .container {
-      max-width: 900px;
-      margin: auto;
-      background-color: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 880px;
+      margin: 42px auto 36px auto;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 42px 32px 32px 32px;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .container:before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -80px;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, var(--primary-light) 50%, transparent 100%);
+      z-index: 0;
     }
     h1, h2, h3 {
-      color: #005baa;
+      color: var(--primary);
+      margin-top: 1.6em;
+      margin-bottom: 0.6em;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-top: 0;
+      margin-bottom: 0.7em;
+      letter-spacing: 0.03em;
+      color: var(--primary);
+      text-align: left;
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+      margin-top: 2.2em;
+      margin-bottom: 0.7em;
+    }
+    h3 {
+      font-size: 1.14rem;
+      color: var(--accent);
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    p, ul, li {
+      font-size: 1.02rem;
+      line-height: 1.68;
+      position: relative;
+      z-index: 1;
     }
     ul {
-      margin-left: 20px;
+      margin: 0 0 1.2em 1.8em;
+      padding: 0;
     }
     a {
-      color: #005baa;
-      text-decoration: none;
+      color: var(--primary);
+      text-decoration: underline;
+      transition: color 0.2s;
+      font-weight: 500;
     }
     a:hover {
-      text-decoration: underline;
+      color: var(--accent);
+    }
+    strong {
+      color: var(--primary);
+      font-weight: 600;
     }
     hr {
-      margin: 30px 0;
+      margin: 38px 0 24px 0;
+      border: 0;
+      border-top: 1.5px solid var(--border);
+    }
+    .contact-box {
+      background: var(--primary-light);
+      padding: 16px 24px;
+      border-radius: 8px;
+      margin: 18px 0 32px 0;
+      font-size: 1.06rem;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 1px 8px 0 rgba(0, 91, 170, 0.06);
+      z-index: 1;
+      position: relative;
+    }
+    .chip {
+      display: inline-block;
+      padding: 2px 12px;
+      border-radius: 99px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.92em;
+      font-weight: 600;
+      margin-right: 0.5em;
+      margin-bottom: 0.3em;
+      letter-spacing: 0.02em;
+      vertical-align: middle;
+    }
+    .footer {
+      text-align: center;
+      font-size: 1.01rem;
+      color: #666a73;
+      margin-top: 32px;
+      z-index: 1;
+      position: relative;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 18px 6vw 18px 6vw;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      h2 {
+        font-size: 1.09rem;
+        padding-left: 7px;
+      }
+      h3 {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy</h1>
+    <h1>
+      <span class="chip">TC TECH VPN</span> Privacy Policy
+    </h1>
     <p><strong>Last Updated:</strong> May 17, 2025</p>
 
     <h2>Introduction</h2>
-    <p>Welcome to TC TECH VPN. This Privacy Policy is designed to help you understand what information we collect, how we use it, and what choices you have regarding your data when you use our VPN application ("the App").</p>
+    <p>Welcome to <strong>TC TECH VPN</strong>. This Privacy Policy explains what information we collect, how we use it, and your choices regarding your data when using our VPN application ("the App").</p>
 
     <h2>Who We Are</h2>
-    <p><strong>TC TECH DEVELOPERS</strong> is the data controller responsible for your personal information. We are committed to protecting your privacy and providing a secure VPN service.</p>
+    <p><strong>TC TECH DEVELOPERS</strong> is the data controller for your personal information. We are committed to upholding your privacy and providing a secure VPN service.</p>
 
     <h2>Information We Collect</h2>
     <h3>Information You Provide</h3>
@@ -101,7 +223,7 @@
     <p>We do <strong>not</strong> sell your browsing history or VPN usage data.</p>
 
     <h2>Data Security</h2>
-    <p>We implement appropriate technical and organizational safeguards to protect your data against unauthorized access or loss.</p>
+    <p>We implement robust technical and organizational safeguards to protect your data from unauthorized access or loss.</p>
 
     <h2>Data Retention</h2>
     <p>We retain your data only as necessary. <strong>Connection logs</strong> are kept for <strong>30 days</strong>.</p>
@@ -130,7 +252,10 @@
       <li>Right to non-discrimination</li>
     </ul>
 
-    <p>To exercise your privacy rights, contact us at: <a href="mailto:tctechofficial2@gmail.com">tctechofficial2@gmail.com</a></p>
+    <div class="contact-box">
+      <b>To exercise your privacy rights, contact us at:</b><br>
+      <a href="mailto:tctechofficial2@gmail.com">tctechofficial2@gmail.com</a>
+    </div>
 
     <h2>Children's Privacy</h2>
     <p>Our App is not intended for children under 16. If we have collected data from a child, please contact us for removal.</p>
@@ -145,9 +270,11 @@
     <p>We may update this policy. Changes will be posted on our website and app.</p>
 
     <h2>Contact Us</h2>
-    <p><strong>TC TECH DEVELOPERS</strong></p>
-    <p>Email: <a href="mailto:tctechofficial2@gmail.com">tctechofficial2@gmail.com</a></p>
-    <p>Phone: +254 74658824</p>
+    <div class="contact-box">
+      <strong>TC TECH DEVELOPERS</strong><br>
+      Email: <a href="mailto:tctechofficial2@gmail.com">tctechofficial2@gmail.com</a><br>
+      Phone: <a href="tel:+25474658824">+254 74658824</a>
+    </div>
 
     <h2>Specific Legal Disclosures</h2>
     <h3>California Privacy Rights</h3>
@@ -157,7 +284,9 @@
     <p>Residents of the EEA have rights under the General Data Protection Regulation (GDPR).</p>
 
     <hr />
-    <p style="text-align:center">&copy; 2025 TC TECH DEVELOPERS. All rights reserved.</p>
+    <div class="footer">
+      &copy; 2025 TC TECH DEVELOPERS. All rights reserved.
+    </div>
   </div>
 </body>
 </html>
